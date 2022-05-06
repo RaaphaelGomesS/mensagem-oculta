@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <title>Codificar e decodificar</title>
+</head>
+
+<body>
+
+ <div class="container">
+    <form class="formulario">
+    
+        <h1>Mensagem oculta</h1><br>
+        <label class="titulo">Insira a sua mensagem</label><br>
+        <input type="text" id="text"><br>
+        
+        <select class="seletor">
+            <lab>Selecione o tipo de codificação:</lab>
+            <option>Selecione</option>
+            <option id="base64" value="base64">Base 64</option>
+            <option id="cifra" value="cifra">Cifra de César</option>
+        </select><br>
+
+        <div id="incremento">
+        </div><br>
+            
+        <div class="input">
+            <input type="radio" name="radio" id="codificar">Codificar<br><br>
+            <input type="radio" name="radio" id="decodificar">Decodificar
+        </div><br>    
+
+        <div id="botao">
+        </div><br>
+
+        <div id="resposta">
+        </div>
+
+    </form>
+</div>
+    
+</body>
+
+<script src="./index.js"></script>
+
+</html>
